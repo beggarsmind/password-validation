@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Validation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Validation</h1>
+      <form id="passwordForm">
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <div class="password-container">
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+            />
+            <button type="button" id="togglePassword">Show</button>
+          </div>
+        </div>
+        <ul>
+          <li id="length" class="invalid">At least 8 characters</li>
+          <li id="uppercase" class="invalid">At least 1 uppercase letter</li>
+          <li id="lowercase" class="invalid">At least 1 lowercase letter</li>
+          <li id="number" class="invalid">At least 1 number</li>
+          <li id="special" class="invalid">
+            At least 1 special character (!@#$%^&*)
+          </li>
+        </ul>
+        <button type="submit" id="submitBtn" disabled>Submit</button>
+        <footer class="footer">
+          Re-Designed By Ranjithkumar.R (
+          <a href="https://github.com/beggarsmind">Beggar's Mind</a> )
+        </footer>
+      </form>
+      <p id="notification" class="hidden">Password Accepted!</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
